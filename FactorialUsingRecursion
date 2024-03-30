@@ -1,0 +1,26 @@
+//recursion:Any function  which calls itself is called recursion.
+A recursion has the base case and the recursive case.
+
+package coding;
+import java.util.*;
+
+public class FactorialUsingRecursion {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int n=sc.nextInt();
+		int res=factorial(n);
+		System.out.println(res);
+	}
+public static int factorial(int n) {
+	if(n<=1)//base case
+		return 1;
+	return n*factorial(n-1);
+}
+
+}
+
+//output:
+Enter a number:
+5
+120
