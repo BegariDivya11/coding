@@ -1,0 +1,29 @@
+
+import java.util.*;
+class LengthOfLastWord{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+      String str=sc.next();
+        int res=findLength(str);
+        System.out.println(res);
+}
+public static int findLength(String str){
+str=str.trim();
+int cnt=0;
+int n=str.length()-1;
+for(int i=n;i>=0;i--){
+if(str.charAt(i)!=' ')
+cnt++;
+else
+break;
+}
+return cnt;
+}
+}
+
+
+
+OUTPUT:
+Hello World
+5
+
